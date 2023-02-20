@@ -295,4 +295,58 @@ else:
     print(ends_with)
 # conditionals go here
 
+#list : a collection of groups, could cities,  states, countries, mountains [ use coma to separate items in a list]
 
+
+restraurants= ["cafedelli", "java", "mint and salt", "artcaffe"]
+
+print(restraurants)
+
+#assess items in a list, we assign them an index. (o,1,2,3 ...)
+
+print(restraurants[0]) #this prints out cafedelli
+
+#you can access more than two items in alist [1:2]
+print(restraurants[1:2])
+
+#slicing, a concept in list that helps you  find a specific index in a list. slice =(start:end:step)
+#start is the first element that needs to be includded in your listt and end is the first element that needs to be excluded in a list"
+#step is just an itterator always starts with 1
+
+#so we are getting java alone in this print statement print(restraurants[1:2])  becuase our first element is in index 1 and the first element to be excluded in the list is in index 2.
+# 
+# so to get both java and mint and salt, we will write [1:3] so as to exclude the item in the 3 index and pics elements in index 1 and 2
+# 
+
+
+
+county = ["nakuru", "mombasa",  "kisii", "busia"]
+
+print(county[0:2])
+
+#desctructive methods
+
+#append (adds items to a list)
+#pop remmoves the last item from the list
+#remove(removes specified items)
+#del(deletes the list)
+#clear(removes items in a array)
+#len(shows no of items in a list)
+#set(checks for unique values in a list)    
+
+
+county.append("Eldoret")
+county.append("nakuru")
+
+county = set(county)
+
+county = county.pop()
+
+
+
+print(len(county))
+
+#set(removes duplicates from a list and also arranges items in inorder)
+#to find difference in new list items  after doing the method set()
+
+#len(originlist) - len(presentlist)
