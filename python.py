@@ -350,3 +350,30 @@ print(len(county))
 #to find difference in new list items  after doing the method set()
 
 #len(originlist) - len(presentlist)
+
+#an example
+
+countries = ['Croatia',
+ 'USA',
+ 'Argentina',
+ 'Mexico',
+ 'USA',
+ 'Morocco',
+ 'New Mexico',
+ 'Finland',
+ 'Argentina',
+ 'Italy',
+ 'Canada',
+ 'South Korea']
+
+countries.append("thailand")
+print(countries)
+
+countries.pop(4)
+
+print(len(countries))
+
+unique_countries= set(countries)
+print(unique_countries)
+set_countries =len(countries)-len(unique_countries)
+print(set_countries)
