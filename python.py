@@ -377,3 +377,65 @@ unique_countries= set(countries)
 print(unique_countries)
 set_countries =len(countries)-len(unique_countries)
 print(set_countries)
+
+
+#dictionaries a collection of key value pairs. this allows easy access to data for a particular key,
+#dictionaries are closed with curly braces
+#so it's a group of dictionaries with key values, key is to the left and value is to the right  
+
+names= {"diana" : 20, "mongina":30}
+
+Technology = [{
+    "languages":"python",
+    "laptops": "lenovo",
+    "keyboard": "mouse",
+    "charger" :"lenovo-charger"
+
+},
+{
+    "blessing": "blessing",
+    "diana": "diana"
+}]
+
+# print(Technology["languages"])
+# print(Technology["keyboard"])
+
+
+seinfeld = {'name': 'Seinfeld', 'creators': ['Larry David', 'Jerry Seinfeld'], 'genre': 'sitcom', 'no_of_seasons': 10, 'no_of_episodes': 180}
+
+print(seinfeld["name"])
+
+tv_shows = [seinfeld,Technology]
+print(tv_shows)
+
+#basically we can have a list of lists in the dictionary.
+
+larry = tv_shows[0]['creators'][0]
+print(larry)
+
+
+greenville = {'Area': 68, 'City': 'Greenville', 'Country': 'USA', 'Population': 84554}
+
+print(greenville["Population"])
+
+#to only list key values
+
+# print (Technology.keys())
+# print (Technology.values()) #to get the values only from the dictionary
+
+#accessing itmes in a list of dictionries you use their indices
+
+#to find length in a dictionary
+
+print(len(Technology))
+
+#to find time of dictionary item
+
+dict_type = Technology[1].keys()
+
+print(type(dict_type))
+
+dict_type = Technology[1].values()
+
+print(type(dict_type))
+
